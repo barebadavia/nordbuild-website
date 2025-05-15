@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NordBuild</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+      background-color: #f4f9ff;
+    }
+
+    header {
+      background: #005bac;
+      color: #fff;
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    nav {
+      background: #004080;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .hero {
+      text-align: center;
+      background: url('https://source.unsplash.com/1600x600/?construction,site') no-repeat center center/cover;
+      color: white;
+      padding: 5rem 2rem;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .services, .projects, .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1.5rem;
+    }
+
+    .contact {
+      background: #e0ecf7;
+      border-radius: 10px;
+      padding: 2rem;
+    }
+
+    .contact form {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .contact input, .contact textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact button {
+      background: #005bac;
+      color: white;
+      border: none;
+      padding: 0.75rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .map {
+      margin-top: 2rem;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #004080;
+      color: white;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>NordBuild</h1>
+    <p>Building a Stronger Future in Finland</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#team">Team</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Welcome to NordBuild</h2>
+    <p>Trusted Finnish Construction Partner</p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>NordBuild is a dedicated Finnish construction company delivering high-quality building services throughout Finland. Our commitment to excellence ensures long-lasting and reliable results for every project we undertake.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card">
+        <img src="https://source.unsplash.com/featured/?construction,renovation" alt="Renovations">
+        <div class="card-content">
+          <h3>Renovations</h3>
+          <p>Expert renovations to modernize and revitalize your space.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/featured/?building,architecture" alt="New Builds">
+        <div class="card-content">
+          <h3>New Builds</h3>
+          <p>From ground up, we construct durable and efficient buildings.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/featured/?interior,design" alt="Interior Work">
+        <div class="card-content">
+          <h3>Interior Work</h3>
+          <p>Stylish and functional interiors tailored to your needs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <img src="https://source.unsplash.com/featured/?apartment,building" alt="Apartment Block">
+        <div class="card-content">
+          <h3>Helsinki Apartments</h3>
+          <p>Completed in 2024, a modern apartment complex in central Helsinki.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/featured/?school,architecture" alt="School Building">
+        <div class="card-content">
+          <h3>Espoo School</h3>
+          <p>A state-of-the-art educational facility finished in early 2023.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/featured/?warehouse,construction" alt="Warehouse">
+        <div class="card-content">
+          <h3>Tampere Logistics Hub</h3>
+          <p>A large-scale warehouse project for regional logistics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="team">
+    <h2>Meet Our Team</h2>
+    <div class="team">
+      <div class="card">
+        <img src="https://source.unsplash.com/featured/?man,construction" alt="CEO">
+        <div class="card-content">
+          <h3>Antti Virtanen</h3>
+          <p>CEO & Founder</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/featured/?woman,engineer" alt="Project Manager">
+        <div class="card-content">
+          <h3>Laura Niemi</h3>
+          <p>Project Manager</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/featured/?site,supervisor" alt="Site Supervisor">
+        <div class="card-content">
+          <h3>Mikko Lehto</h3>
+          <p>Site Supervisor</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact">
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79770.2248244265!2d24.86080019881869!3d60.16985569146992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920a43e3e0025f%3A0x9f4fa6fba3ae7ef6!2sHelsinki%2C%20Finland!5e0!3m2!1sen!2sfi!4v1715680326326!5m2!1sen!2sfi"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 NordBuild. All rights reserved. | <a href="mailto:info@nordbuild.fi" style="color: #fff; text-decoration: underline;">info@nordbuild.fi</a></p>
+  </footer>
+</body>
+
+</html>
